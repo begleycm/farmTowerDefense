@@ -6,10 +6,7 @@
 #include <vector>
 
 int main( int argc, char* args[] ) {
-<<<<<<< HEAD
-=======
   std::cout << "start window" << std::endl;
->>>>>>> 6f79228cea26dd91b206fcc3daba68823370b354
   //Initialize SDL
   if( SDL_Init( SDL_INIT_VIDEO ) < 0 )
   {
