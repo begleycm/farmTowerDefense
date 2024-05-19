@@ -13,7 +13,7 @@ int main( int argc, char* args[] ) {
   }
   //The surface contained by the window
   SDL_Surface* screenSurface = NULL;
-  SDL_Window *window = SDL_CreateWindow("farm tower game", 200, 200, 1280, 720, SDL_WINDOW_ALLOW_HIGHDPI);
+  SDL_Window *window = SDL_CreateWindow("farm tower game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1280, 720, SDL_WINDOW_ALLOW_HIGHDPI);
   SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
   if (NULL == window)
   {
@@ -45,9 +45,4 @@ int main( int argc, char* args[] ) {
   SDL_Quit();
 
   return 0;
-}
-
-
-void addballs(std::vector<int> &a){
-
 }
