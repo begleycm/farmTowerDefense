@@ -19,3 +19,8 @@ add_executable(main main.cpp)
 # Link libraries
 target_link_libraries(main mingw32 SDL2main SDL2)
 
+# Copy SDL DLL to the output directory after building
+add_custom_command(TARGET main POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+    "${PROJECT_SOURCE_DIR}/SDL2.dll"
+    $<TARGET_FILE_DIR:main>)
