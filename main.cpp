@@ -4,8 +4,9 @@
 #include <iostream>
 #include <SDL2/SDL.h>
 #include <vector>
+
 int main( int argc, char* args[] ) {
-  std::cout << "farm go boo2222m" << std::endl;
+  std::cout << "start window" << std::endl;
   //Initialize SDL
   if( SDL_Init( SDL_INIT_VIDEO ) < 0 )
   {
