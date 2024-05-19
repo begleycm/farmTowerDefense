@@ -13,10 +13,10 @@ int main( int argc, char* args[] ) {
   }
   //The surface contained by the window
   SDL_Surface* screenSurface = NULL;
-  SDL_Window *window = SDL_CreateWindow("ballsssssssssss", 200, 200, 1280, 720, SDL_WINDOW_ALLOW_HIGHDPI);
+  SDL_Window *window = SDL_CreateWindow("farm tower game", 200, 200, 1280, 720, SDL_WINDOW_ALLOW_HIGHDPI);
   SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
   if (NULL == window)
-  { 
+  {
     std::cout << "Could not create window: " << SDL_GetError() << std::endl;
     return 1;
   }
@@ -26,18 +26,18 @@ int main( int argc, char* args[] ) {
   screenSurface = SDL_GetWindowSurface( window );
   //Fill the surface white
   SDL_FillRect( screenSurface, NULL, SDL_MapRGB( screenSurface->format, 0xFF, 0xFF, 0xFF ) );
-  
+
   //Update the surface
   SDL_UpdateWindowSurface( window );
-  
+
   //Hack to get window to stay up
-  SDL_Event e; 
-  bool quit = false; 
-  while( quit == false ){ 
+  SDL_Event e;
+  bool quit = false;
+  while( quit == false ){
     while( SDL_PollEvent( &e ) ){
-      if( e.type == SDL_QUIT ) 
-        quit = true; 
-    } 
+      if( e.type == SDL_QUIT )
+        quit = true;
+    }
   }
 
   SDL_DestroyWindow(window);
