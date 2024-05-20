@@ -4,14 +4,17 @@
 
 
 class GameObject{
+private:
+  SDL_Renderer* renderer;
+  
+public:
   bool Active;
   Transform transform;
 
-  SDL_Renderer* renderer;
 
 //Start of the scene
-  virtual void start();
+  virtual void start() = 0;
 //Plays during each frame 
-  virtual void update();
-  virtual void render();
+  virtual void update() = 0;
+  virtual void render() = 0;
 };

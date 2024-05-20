@@ -1,12 +1,12 @@
 #include "Transform.h"
 Transform::Transform(){
-  Position = Vector2_Zero;
-  Rotation = Vector2_Zero;
+  Position = SDL_FPoint_Zero;
+  Rotation = SDL_FPoint_Zero;
 }
 Transform::Transform(SDL_FPoint pos){
   Position = pos;
-  Rotation = Vector2_Zero;
-  Scale = Vector2_Zero;
+  Rotation = SDL_FPoint_Zero;
+  Scale = SDL_FPoint_Zero;
 }
 Transform::Transform(SDL_FPoint pos, SDL_FPoint rot, SDL_FPoint sca){
   Position = pos;
