@@ -1,16 +1,22 @@
 #pragma once
 #include <vector>
-
+#include "item.h" 
 #define MAX_INVENTORY 10
+
 
 class Inventory{
 private:
-  void* storage[MAX_INVENTORY];
 
+
+  Item* storage[MAX_INVENTORY];
 
 
 public:
-  
+  bool AddItem(Item*);
+  Item* RemoveItem(Item*);
 
+
+  Inventory();
+  ~Inventory();
 
 };

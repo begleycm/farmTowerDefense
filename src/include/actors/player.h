@@ -1,8 +1,9 @@
 #pragma once
 
+#include "actor.h"
 #include "../objects/gameobject.h"
 
-class Player : public GameObject{
+class Player : public Actor{
 
   void start() override;
   void update() override;
