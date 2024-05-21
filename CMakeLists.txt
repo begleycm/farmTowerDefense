@@ -16,19 +16,15 @@ link_directories("src/lib")
 # Add the executable
 add_executable(main main.cpp
         src/include/items/inventory.cpp
-        src/include/items/inventory.h
+        src/include/items/item.cpp
         src/include/actors/actor.cpp
-        src/include/actors/actor.h
         src/include/actors/player.cpp
-        src/include/actors/player.h
         src/include/map/map.cpp
-        src/include/map/map.h
         src/include/objects/gameobject.cpp
         src/include/sdl_point_extension/sdl_point_extension.cpp
         src/include/time/time.cpp
         src/include/transform/transform.cpp
         src/include/items/item.cpp
-        src/include/actors/enemy.h
         src/include/actors/enemy.cpp)
 
 # Link libraries

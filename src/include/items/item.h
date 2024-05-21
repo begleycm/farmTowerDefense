@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <cstdint>
 
 enum Item_Type{
   block,
@@ -16,11 +17,11 @@ public:
   std::string Name;
   std::string Description;
   Item_Type type;
-  int count;  
-  int MaxCount;
+  uint32_t count;  
+  uint32_t MaxCount;
   virtual void Effect(void*) = 0;
 
   Item();
-  Item(int count, std::string TexturePath);
+  Item(uint32_t count, std::string TexturePath);
 
 };
