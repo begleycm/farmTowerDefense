@@ -3,7 +3,7 @@
 #include "actor.h"
 #include "../objects/gameobject.h"
 
-class Player : public Actor {
+class Enemy : public Actor {
 private:
 public:
   void start() override;

@@ -6,12 +6,12 @@
 class Time{
 
 private:
-  
+
   std::chrono::_V2::system_clock::time_point start;
   static Time* instance;
   Time();
 
-public: 
+public:
   static float deltaTime; //The delta of the start and end of the frame.
 
   static Time* GetInstance();
@@ -19,5 +19,5 @@ public:
   void end_time();    //At the end of the frame
 
 
-  ~Time();
+  ~Time() ;
 };

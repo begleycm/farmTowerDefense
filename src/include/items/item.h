@@ -1,6 +1,13 @@
 #pragma once
 #include <string>
 
+enum Item_Type{
+  block,
+  plant,
+  consumable,
+  none
+
+};
 
 class Item{
   std::string texturePath;
@@ -15,13 +22,5 @@ public:
 
   Item();
   Item(int count, std::string TexturePath);
-
-};
-
-enum Item_Type{
-  block,
-  plant,
-  consumable,
-  none
 
 };
