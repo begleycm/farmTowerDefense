@@ -1,4 +1,4 @@
-#include "sdl_point_extension.h"
+#include "sdl_fpoint_extension.h"
 
 float Magnitude(SDL_FPoint Point){
   return sqrt(Point.x * Point.x + Point.y * Point.y);

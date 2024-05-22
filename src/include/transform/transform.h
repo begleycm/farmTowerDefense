@@ -1,7 +1,7 @@
 #pragma once
 
 #include <cmath>
-#include "../sdl_point_extension/sdl_point_extension.h"
+#include "../sdl_fpoint_extension/sdl_fpoint_extension.h"
 
 
 class Transform{
